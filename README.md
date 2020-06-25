@@ -1,29 +1,21 @@
-# Eloquent Wrapper for WordPress
+# ORM for WordPress
 
-This is a fork of the `wp-eloquent` [Laravel Eloquent](http://laravel.com/docs/5.0/eloquent) wrapper for WordPress.  
+Laravel Eloquent based ORM for WordPress
 
-The aim of this fork is to add additional functionality and provide regular maintenance
- 
+This is a fork of the original library written by [Tareq Hasan](https://tareq.co) with some more improvements and changes. 
+
  
 ## Package Installation
 
-To install this package, edit your `composer.json` file:
+To install the library run:
 
-```js
-{
-    "require": {
-        "gdarko/wp-orm":"dev-master"
-    }
-}
+```
+composer require gdarko/wp-orm
 ```
 
-Now run:
+## Usage Example
 
-`$ composer install`
-
-# Usage Example
-
-## Basic Usage 
+### Basic Usage 
 
 ```php
 
@@ -161,4 +153,3 @@ var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages 
 
 ## Author
 - [Darko Gjorgjijoski](https://darkog.com)
-- [Tareq Hasan](https://tareq.co)
