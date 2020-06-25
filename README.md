@@ -23,7 +23,7 @@ Now run:
 
 # Usage Example
 
-## Basic Usage
+## Basic Usage 
 
 ```php
 
@@ -88,23 +88,6 @@ class CustomTableModel extends Model {
      * @var string
      */
     protected $guarded = [ 'ID' ];
-
-    /**
-     * Overide parent method to make sure prefixing is correct.
-     *
-     * @return string
-     */
-    public function getTable()
-    {
-        // In this example, it's set, but this is better in an abstract class
-        if ( isset( $this->table ) ){
-            $prefix =  $this->getConnection()->db->prefix;
-            
-            return $prefix . $this->table;
-        }
-
-        return parent::getTable();
-    }
 
 }
 ```
