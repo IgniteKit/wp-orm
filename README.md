@@ -160,5 +160,5 @@ var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages 
  - WordPress 4.0+
 
 ## Author
-[Darko Gjorgjijoski](https://darkog.com)
-[Tareq Hasan](https://tareq.co)
+- [Darko Gjorgjijoski](https://darkog.com)
+- [Tareq Hasan](https://tareq.co)
