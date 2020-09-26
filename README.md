@@ -5,7 +5,7 @@ Laravel Eloquent based ORM for WordPress
 This is a fork of the original library written by [Tareq Hasan](https://tareq.co) with some more improvements and changes. 
 
  
-## Package Installation
+### Package Installation
 
 To install the library run:
 
@@ -13,9 +13,9 @@ To install the library run:
 composer require ignitekit/wp-orm
 ```
 
-## Usage Example
+### Usage Example
 
-### Basic Usage 
+#### Basic Usage 
 
 ```php
 
@@ -33,7 +33,7 @@ var_dump( DB::select('SELECT * FROM wp_users WHERE id = ?', [1]) );
 var_dump( DB::table('users')->where('user_login', 'john')->first() );
 ```
 
-## Creating Models For Custom Tables
+### Creating Models For Custom Tables
 You can use custom tables of the WordPress databases to create models:
 
 ```php
@@ -84,7 +84,7 @@ class CustomTableModel extends Model {
 }
 ```
 
-### Retrieving All Rows From A Table
+#### Retrieving All Rows From A Table
 
 ```php
 $users = $db->table('users')->get();
@@ -97,12 +97,12 @@ foreach ($users as $user) {
 Here `users` is the table name **without prefix**. The prefix will be applied automatically.
 
 
-### Other Examples
+#### Other Examples
 
  - [Queries](http://laravel.com/docs/5.0/queries)
  - [Eloquent ORM](http://laravel.com/docs/5.0/eloquent)
 
-## Writing a Model
+### Writing a Model
 
 ```php
 use \IgniteKit\WP\ORM\Eloquent\Model as Model;
@@ -116,7 +116,7 @@ var_dump( Employee::find(1) ); // find employee with ID 1
 ```
 The class name `Employee` will be translated into `PREFIX_employees` table to run queries. But as usual, you can override the table name.
 
-### In-built Models for WordPress
+#### In-built Models for WordPress
 
 - Post
 - Comment
@@ -131,7 +131,7 @@ use IgniteKit\WP\ORM\Models\Post as Post;
 var_dump( Post::all() ); //returns only posts with WordPress post_type "post"
 ```
 
-#### Filter `Post` by `post_status` and `post_type`
+##### Filter `Post` by `post_status` and `post_type`
 ```php
 use IgniteKit\WP\ORM\Models\Post as Post;
 var_dump(Post::type('page')->get()->toArray()); // get pages
@@ -139,7 +139,7 @@ var_dump(Post::status('publish')->get()->toArray()); // get posts with publish s
 var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages with publish status
 ```
 
-## How it Works
+### How it Works
 
  - Eloquent is mainly used here as the query builder
  - [WPDB](http://codex.wordpress.org/Class_Reference/wpdb) is used to run queries built by Eloquent
@@ -147,9 +147,27 @@ var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages 
  - It doesn't create any extra MySQL connection
 
 
-## Minimum Requirement
+### Minimum Requirement
  - PHP 5.6.4+
  - WordPress 4.0+
 
-## Author
-- [Darko Gjorgjijoski](https://darkog.com)
+### License
+
+```
+Copyright (C) 2020 Darko Gjorgjijoski (https://darkog.com)
+
+This file is part of wp-orm
+
+WP ORM is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+WP ORM  is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with WP ORM. If not, see <https://www.gnu.org/licenses/>.
+```
