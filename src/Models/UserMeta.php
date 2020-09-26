@@ -1,9 +1,9 @@
 <?php
 
-namespace DG\ORM\WP;
+namespace IgniteKit\WP\ORM\Models;
 
 
-use DG\ORM\Eloquent\Model;
+use IgniteKit\WP\ORM\Eloquent\Model;
 
 class UserMeta extends Model
 {

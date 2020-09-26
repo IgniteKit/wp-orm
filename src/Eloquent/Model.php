@@ -1,5 +1,5 @@
 <?php
-namespace DG\ORM\Eloquent;
+namespace IgniteKit\WP\ORM\Eloquent;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

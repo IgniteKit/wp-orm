@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\ORM\WP;
+namespace IgniteKit\WP\ORM\Models;
 
-use DG\ORM\Eloquent\Model;
+use IgniteKit\WP\ORM\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Comment extends Model
@@ -22,6 +22,6 @@ class Comment extends Model
      */
     public function post()
     {
-        return $this->hasOne('DG\ORM\WP\Post');
+        return $this->hasOne('IgniteKit\WP\ORM\WP\Post');
     }
 }

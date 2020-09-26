@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\ORM\Eloquent\Facades;
+namespace IgniteKit\WP\ORM\Eloquent\Facades;
 
-use DG\ORM\Eloquent\Database;
+use IgniteKit\WP\ORM\Eloquent\Database;
 use Illuminate\Support\Facades\Facade;
 
 /**

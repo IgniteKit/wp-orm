@@ -1,5 +1,5 @@
 <?php
-namespace DG\ORM\Eloquent;
+namespace IgniteKit\WP\ORM\Eloquent;
 
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Query\Grammars\Grammar;

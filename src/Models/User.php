@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\ORM\WP;
+namespace IgniteKit\WP\ORM\Models;
 
-use DG\ORM\Eloquent\Model;
+use IgniteKit\WP\ORM\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany as HasManyAlias;
 
 class User extends Model
@@ -30,6 +30,6 @@ class User extends Model
      */
     public function meta()
     {
-        return $this->hasMany('DG\ORM\WP\UserMeta', 'user_id');
+        return $this->hasMany('IgniteKit\WP\ORM\WP\UserMeta', 'user_id');
     }
 }

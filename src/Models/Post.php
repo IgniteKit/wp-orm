@@ -1,15 +1,15 @@
 <?php
 
-namespace DG\ORM\WP;
+namespace IgniteKit\WP\ORM\Models;
 
 
-use DG\ORM\Eloquent\Model;
+use IgniteKit\WP\ORM\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Class Post
  *
- * @package DG\ORM\WP
+ * @package IgniteKit\WP\ORM\WP
  */
 class Post extends Model
 {
@@ -68,7 +68,7 @@ class Post extends Model
      */
     public function comments()
     {
-        return $this->hasMany('DG\ORM\WP\Comment', 'comment_post_ID');
+        return $this->hasMany('IgniteKit\WP\ORM\WP\Comment', 'comment_post_ID');
     }
 
     /**
@@ -78,6 +78,6 @@ class Post extends Model
      */
     public function meta()
     {
-        return $this->hasMany('DG\ORM\WP\PostMeta', 'post_id');
+        return $this->hasMany('IgniteKit\WP\ORM\WP\PostMeta', 'post_id');
     }
 }
