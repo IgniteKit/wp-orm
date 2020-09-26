@@ -10,7 +10,7 @@ This is a fork of the original library written by [Tareq Hasan](https://tareq.co
 To install the library run:
 
 ```
-composer require gdarko/wp-orm
+composer require ignitekit/wp-orm
 ```
 
 ## Usage Example
