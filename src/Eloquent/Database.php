@@ -11,6 +11,10 @@ use Illuminate\Support\Arr;
 class Database implements ConnectionInterface
 {
 
+	/**
+	 * The database instance
+	 * @var \wpdb
+	 */
     public $db;
 
     /**
@@ -473,4 +477,13 @@ class Database implements ConnectionInterface
     {
         return Arr::get($this->config, $option);
     }
+
+	/**
+	 * Get the name of the connected database.
+	 *
+	 * @return string
+	 */
+	public function getDatabaseName() {
+		return defined('DB_NAME') ? DB_NAME : $this->db->dbname;
+	}
 }
