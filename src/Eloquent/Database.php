@@ -11,6 +11,10 @@ use Illuminate\Support\Arr;
 class Database implements ConnectionInterface
 {
 
+	/**
+	 * The database instance
+	 * @var \wpdb
+	 */
     public $db;
 
     /**
@@ -70,10 +74,11 @@ class Database implements ConnectionInterface
      * Begin a fluent query against a database table.
      *
      * @param  string $table
+     * @param string $as
      *
      * @return \Illuminate\Database\Query\Builder
      */
-    public function table($table)
+    public function table($table, $as = null)
     {
         $processor = $this->getPostProcessor();
 
@@ -472,4 +477,13 @@ class Database implements ConnectionInterface
     {
         return Arr::get($this->config, $option);
     }
+
+	/**
+	 * Get the name of the connected database.
+	 *
+	 * @return string
+	 */
+	public function getDatabaseName() {
+		return defined('DB_NAME') ? DB_NAME : $this->db->dbname;
+	}
 }

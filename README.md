@@ -99,8 +99,8 @@ Here `users` is the table name **without prefix**. The prefix will be applied au
 
 #### Other Examples
 
- - [Queries](http://laravel.com/docs/5.0/queries)
- - [Eloquent ORM](http://laravel.com/docs/5.0/eloquent)
+ - [Queries](https://laravel.com/docs/8.x/queries)
+ - [Eloquent ORM](https://laravel.com/docs/8.x/eloquent)
 
 ### Writing a Model
 
@@ -142,19 +142,20 @@ var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages 
 ### How it Works
 
  - Eloquent is mainly used here as the query builder
- - [WPDB](http://codex.wordpress.org/Class_Reference/wpdb) is used to run queries built by Eloquent
+ - [WPDB](https://developer.wordpress.org/reference/classes/wpdb/) is used to run queries built by Eloquent
  - Hence, we have the benfit to use plugins like `debug-bar` or `query-monitor` to get SQL query reporting.
  - It doesn't create any extra MySQL connection
 
 
 ### Minimum Requirement
- - PHP 5.6.4+
+ - PHP 7.3+ (For support of older PHP version use wp-orm major v1.1 and minors within that version)
  - WordPress 4.0+
+
 
 ### License
 
 ```
-Copyright (C) 2020 Darko Gjorgjijoski (https://darkog.com)
+Copyright (C) 2022 Darko Gjorgjijoski (https://darkog.com)
 
 This file is part of wp-orm
 

@@ -22,6 +22,6 @@ class Comment extends Model
      */
     public function post()
     {
-        return $this->hasOne('IgniteKit\WP\ORM\WP\Post');
+        return $this->hasOne('IgniteKit\WP\ORM\Models\Post');
     }
 }

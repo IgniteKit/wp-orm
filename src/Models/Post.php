@@ -68,7 +68,7 @@ class Post extends Model
      */
     public function comments()
     {
-        return $this->hasMany('IgniteKit\WP\ORM\WP\Comment', 'comment_post_ID');
+        return $this->hasMany('IgniteKit\WP\ORM\Comment', 'comment_post_ID');
     }
 
     /**
@@ -78,6 +78,6 @@ class Post extends Model
      */
     public function meta()
     {
-        return $this->hasMany('IgniteKit\WP\ORM\WP\PostMeta', 'post_id');
+        return $this->hasMany('IgniteKit\WP\ORM\PostMeta', 'post_id');
     }
 }
