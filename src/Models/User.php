@@ -30,6 +30,6 @@ class User extends Model
      */
     public function meta()
     {
-        return $this->hasMany('IgniteKit\WP\ORM\WP\UserMeta', 'user_id');
+        return $this->hasMany('IgniteKit\WP\ORM\UserMeta', 'user_id');
     }
 }

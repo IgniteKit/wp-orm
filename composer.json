@@ -4,8 +4,9 @@
     "keywords": ["wordpress", "plugin", "orm", "eloquent", "sql"],
     "homepage": "https://github.com/ignitekit/wp-orm",
     "require": {
-        "illuminate/database": "^5.4",
-        "illuminate/pagination": "^5.4"
+        "illuminate/database": "^7.30",
+        "illuminate/pagination": "^7.30",
+        "illuminate/support": "^7.30"
     },
     "license": "GPL-2.0",
     "authors": [
