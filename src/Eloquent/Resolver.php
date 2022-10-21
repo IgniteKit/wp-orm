@@ -2,7 +2,7 @@
 
 namespace IgniteKit\WP\ORM\Eloquent;
 
-use Illuminate\Database\ConnectionResolverInterface;
+use IgniteKit\Backports\Database\ConnectionResolverInterface;
 
 class Resolver implements ConnectionResolverInterface {
 

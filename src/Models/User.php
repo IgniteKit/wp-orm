@@ -3,7 +3,7 @@
 namespace IgniteKit\WP\ORM\Models;
 
 use IgniteKit\WP\ORM\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany as HasManyAlias;
+use IgniteKit\Backports\Database\Eloquent\Relations\HasMany as HasManyAlias;
 
 class User extends Model
 {

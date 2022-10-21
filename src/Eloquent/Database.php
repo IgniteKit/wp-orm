@@ -1,12 +1,12 @@
 <?php
 namespace IgniteKit\WP\ORM\Eloquent;
 
-use Illuminate\Database\ConnectionInterface;
-use Illuminate\Database\Query\Grammars\Grammar;
-use Illuminate\Database\Query\Processors\Processor;
-use Illuminate\Database\Query\Expression;
-use Illuminate\Database\QueryException;
-use Illuminate\Support\Arr;
+use IgniteKit\Backports\Database\ConnectionInterface;
+use IgniteKit\Backports\Database\Query\Grammars\Grammar;
+use IgniteKit\Backports\Database\Query\Processors\Processor;
+use IgniteKit\Backports\Database\Query\Expression;
+use IgniteKit\Backports\Database\QueryException;
+use IgniteKit\Backports\Support\Arr;
 
 class Database implements ConnectionInterface
 {
@@ -71,7 +71,7 @@ class Database implements ConnectionInterface
      *
      * @param  string $table
      *
-     * @return \Illuminate\Database\Query\Builder
+     * @return \IgniteKit\Backports\Database\Query\Builder
      */
     public function table($table)
     {
@@ -89,7 +89,7 @@ class Database implements ConnectionInterface
      *
      * @param  mixed $value
      *
-     * @return \Illuminate\Database\Query\Expression
+     * @return \IgniteKit\Backports\Database\Query\Expression
      */
     public function raw($value)
     {
@@ -99,7 +99,7 @@ class Database implements ConnectionInterface
 	/**
 	 * Get a new query builder instance.
 	 *
-	 * @return \Illuminate\Database\Query\Builder
+	 * @return \IgniteKit\Backports\Database\Query\Builder
 	 */
 	public function query()
 	{

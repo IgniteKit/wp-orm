@@ -1,7 +1,7 @@
 <?php
 namespace IgniteKit\WP\ORM\Eloquent;
 
-use Illuminate\Database\Query\Builder as EloquentBuilder;
+use IgniteKit\Backports\Database\Query\Builder as EloquentBuilder;
 
 /**
  * QueryBuilder Class

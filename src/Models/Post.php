@@ -4,7 +4,7 @@ namespace IgniteKit\WP\ORM\Models;
 
 
 use IgniteKit\WP\ORM\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use IgniteKit\Backports\Database\Eloquent\Relations\HasMany;
 
 /**
  * Class Post

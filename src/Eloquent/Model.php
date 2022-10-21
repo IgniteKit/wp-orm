@@ -1,10 +1,10 @@
 <?php
 namespace IgniteKit\WP\ORM\Eloquent;
 
-use Illuminate\Database\Eloquent\Model as Eloquent;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Illuminate\Support\Str;
+use IgniteKit\Backports\Database\Eloquent\Model as Eloquent;
+use IgniteKit\Backports\Database\Eloquent\Relations\BelongsToMany;
+use IgniteKit\Backports\Database\Eloquent\Relations\HasManyThrough;
+use IgniteKit\Backports\Support\Str;
 
 /**
  * Model Class
@@ -57,7 +57,7 @@ abstract class Model extends Eloquent
     /**
      * Get a new query builder instance for the connection.
      *
-     * @return \Illuminate\Database\Query\Builder
+     * @return \IgniteKit\Backports\Database\Query\Builder
      */
     protected function newBaseQueryBuilder()
     {

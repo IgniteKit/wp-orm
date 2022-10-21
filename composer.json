@@ -10,10 +10,10 @@
   ],
   "homepage": "https://github.com/ignitekit/wp-orm",
   "require": {
-    "php": "^5.6.4|^7.0",
+    "php": "^5.6.4|^7.0|^8.0",
     "ext-json": "*",
-    "illuminate/database": "^5.4",
-    "illuminate/pagination": "^5.4"
+    "ignitekit/laravel-database": "^1.0",
+    "ignitekit/laravel-pagination": "^1.0"
   },
   "license": "GPL-2.0",
   "authors": [

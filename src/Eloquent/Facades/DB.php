@@ -3,11 +3,11 @@
 namespace IgniteKit\WP\ORM\Eloquent\Facades;
 
 use IgniteKit\WP\ORM\Eloquent\Database;
-use Illuminate\Support\Facades\Facade;
+use IgniteKit\Backports\Support\Facades\Facade;
 
 /**
- * @see \Illuminate\Database\DatabaseManager
- * @see \Illuminate\Database\Connection
+ * @see \IgniteKit\Backports\Database\DatabaseManager
+ * @see \IgniteKit\Backports\Database\Connection
  */
 class DB extends Facade
 {
