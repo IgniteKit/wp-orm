@@ -26,5 +26,6 @@
     "psr-4": {
       "IgniteKit\\WP\\ORM\\": "src/"
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
